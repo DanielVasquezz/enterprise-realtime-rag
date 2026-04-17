@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+qdrant_data/
+redpanda_data/
+.DS_Store

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha RAG | Enterprise AI Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar para Ingesta en Tiempo Real -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <div class="pulse-ring"></div>
+                <h2>Alpha<span class="highlight">RAG</span></h2>
+            </div>
+            
+            <p class="subtitle">Data Broker (Kafka)</p>
+            
+            <form id="ingestForm" class="ingest-form">
+                <label>Ingreso Confidencial de Documentos</label>
+                <input type="text" id="docId" placeholder="ID del Documento (ej. rep_44)" required autocomplete="off">
+                <textarea id="docContent" placeholder="Pegue el contenido del reporte aquí para enviarlo a la cola de procesamiento..." required></textarea>
+                <button type="submit" id="ingestBtn">
+                    <span class="btn-text">Subir a Kafka</span>
+                    <div class="spinner hidden"></div>
+                </button>
+            </form>
+            
+            <div id="ingestStatus" class="status-msg"></div>
+        </aside>
+
+        <!-- Main Chat Area (RAG Interface) -->
+        <main class="chat-area glass-panel">
+            <header class="chat-header">
+                <h3>Terminal Analítica de Groq (Llama-3.1)</h3>
+                <span class="badge">Online</span>
+            </header>
+            
+            <div id="chatBox" class="chat-box">
+                <div class="message ai-message">
+                    <div class="avatar">AI</div>
+                    <div class="msg-content">
+                        Saludos, Director. El motor de búsqueda vectorial Qdrant está conectado. Ingrese documentos en la terminal izquierda y proceda con su consulta.
+                    </div>
+                </div>
+                <!-- Mensajes dinámicos aquí -->
+            </div>
+            
+            <form id="chatForm" class="chat-input-area">
+                <input type="text" id="queryInput" placeholder="Busque en billones de registros..." required autocomplete="off">
+                <button type="submit" id="sendBtn">Analizar</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Script se cargará al final -->
+    <script src="app.js"></script>
+</body>
+</html>

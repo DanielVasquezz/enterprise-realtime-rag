@@ -1,0 +1,29 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Variables de entorno
+.env
+
+# Data / bases locales
+qdrant_data/
+redpanda_data/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Archivos grandes (opcional)
+*.dylib
+*.so
