@@ -1,0 +1,4 @@
+confluent-kafka==2.3.0
+qdrant-client==1.8.0
+torch==2.2.2
+transformers==4.40.0

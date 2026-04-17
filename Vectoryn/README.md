@@ -1,4 +1,7 @@
+#Real-time intelligence engine for structured and unstructured data.
+
 # Enterprise Distributed RAG (Kafka + Qdrant + Llama-3)
+
 
 ## Arquitectura del Proyecto
 Este proyecto es un sistema de Búsqueda Vectorial (RAG) diseñado con estándares de Big Tech (Event-Driven Architecture) para soportar alto tráfico y garantizar escalabilidad asíncrona real.
